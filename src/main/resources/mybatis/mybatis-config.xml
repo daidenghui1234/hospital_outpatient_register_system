@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    顺序：-->
+    <!--    (properties?, settings?, typeAliases?, -->
+    <!--    typeHandlers?, objectFactory?, objectWrapperFactory?, -->
+    <!--    reflectorFactory?, plugins?, environments?,-->
+    <!--    databaseIdProvider?, mappers?)>-->
+    <settings>
+        <!--        标准日志-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+        <!--    驼峰命名，默认不开启-->
+        <!--    从经典数据库列名 A_COLUMN 映射到经典 Java 属性名 aColumn。-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+
+    </settings>
+    <typeAliases>
+        <package name="top.jkxljc.pojo"/>
+    </typeAliases>
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+</configuration>

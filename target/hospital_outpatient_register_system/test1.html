@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .floats{
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+<ul class="nav nav-tabs floats nav-stacked" role="tablist" id="myTab">
+    <li role="presentation" class="active"><a href="#first" aria-controls="home" role="tab" data-toggle="tab">第一项</a></li>
+    <li role="presentation"><a href="#second" aria-controls="profile" role="tab" data-toggle="tab">第二项</a></li>
+    <li role="presentation"><a href="#third" aria-controls="messages" role="tab" data-toggle="tab">第三项</a></li>
+    <li role="presentation"><a href="#forth" aria-controls="settings" role="tab" data-toggle="tab">第四项</a></li>
+</ul>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="first">哈哈</div>
+    <div role="tabpanel" class="tab-pane" id="second">
+        <p>互联网是做什么的？</p>
+        <p>互联网技能教育，免费的哦</p>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="third">哼哼</div>
+    <div role="tabpanel" class="tab-pane" id="forth">嘿嘿</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#myTab a[href="#first"]').tab('show')
+    });
+</script>
+</body>
+</html>

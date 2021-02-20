@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.jkxljc.dao.RegisterMapper">
+    <insert id="addPatient">
+        INSERT INTO patient(patient_name, patient_gender, patient_age, patient_tel, patient_address) VALUES (#{patientName}, #{patientGender}, #{patientAge}, #{patientTel}, #{patientAddress})
+    </insert>
+
+    <select id="getPatientById" resultType="int">
+        SELECT patient_id from patient where patient_name = #{PatientName} and patient_tel=#{patientTel}
+    </select>
+
+    <insert id="addRegister">
+        INSERT INTO account(account_name, account_password, account_status, account_type, account_num) VALUES (#{accountName}, #{accountPassword}, 0, 2, #{accountNum});
+    </insert>
+</mapper>

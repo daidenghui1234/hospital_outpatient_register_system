@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{bootstrap, bootstrap-datetimepicker, bootstrap-table, bootstrap-table-zh-CN, jquery, jweixin-1.0.0, moment-with-locales}" />
+  </component>
+</project>
